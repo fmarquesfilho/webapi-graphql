@@ -18,6 +18,6 @@ export class NewPlaylistInput {
 
   @Field({ nullable: true })
   @IsOptional()
-  @Length(30, 255)
+  @Length(3, 255)
   description: string;
 }

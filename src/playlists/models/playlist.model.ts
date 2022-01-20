@@ -6,7 +6,7 @@ export class Playlist {
   id: string;
 
   @Field()
-  name?: string;
+  name: string;
 
   @Field()
   creatorUsername: string;

@@ -1,0 +1,22 @@
+type Playlist {
+  id: ID!
+  content: String
+  author: String
+}
+
+type Query {
+  getPlaylist(id: ID!): Playlist
+}
+
+type Mutation {
+  createPlaylist(input: PlaylistInput): Playlist
+  updatePlaylist(id: ID!, input: PlaylistInput): Playlist
+}
+
+input PlaylistInput {
+  name: String
+  creatorUsername: String
+  numberofSongs: Int
+  minutes: Int
+  description: String
+}
